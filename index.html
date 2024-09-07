@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Details Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Work Details Form</h2>
+        <form action="#" method="POST">
+            <label for="srNumber">SR Number:</label>
+            <input type="number" id="srNumber" name="srNumber" required>
+
+            <label for="dateTime">Date and Time:</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="customerNumber">Customer Number:</label>
+            <input type="tel" id="customerNumber" name="customerNumber" required pattern="[0-9]{10}" placeholder="1234567890">
+
+            <label for="workDetails">Work Details:</label>
+            <textarea id="workDetails" name="workDetails" rows="4" required></textarea>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
